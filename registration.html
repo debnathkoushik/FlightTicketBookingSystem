@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload='document.form1.text1.focus()'>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form name="form1" action="#" onsubmit="return false">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input id="fullName" name='text1' type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input id="email" name='text' type="text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input id="phoneNumber" name='text' type="text" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password( must be between 6 to 20 char., should contain at least 1 numeric
+                            digit, 1
+                            uppercase and 1 lowercase letter)</span>
+                        <input id="password" type="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input id="confirmPassword" type="password" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <div class="genderDetails">
+                    <input type="radio" name="gender" id="dot-1" value="male">
+                    <input type="radio" name="gender" id="dot-2" value="female">
+                    <input type="radio" name="gender" id="dot-3" value="Not Available" checked>
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" id="register">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="registration.js"></script>
+</body>
+
+</html>

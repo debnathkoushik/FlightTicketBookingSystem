@@ -1,0 +1,165 @@
+.ticketform {
+    display: block;
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-top: 6%;
+    border-radius: 3px;
+    /* background-color: rgb(201, 200, 198); */
+    background-color: rgba(232, 235, 232, 0.5);
+    width: 50%;
+    height: 20%;
+    padding: 2% 2% 2%;
+    border-radius: 6px;
+
+}
+
+/* Navigation Bar */
+.topnav {
+    overflow: hidden;
+    background-color: #62CDFF;
+    height: 60px;
+
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px 13px;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.logoname {
+    font-size: larger;
+    text-align: center;
+    margin: 10px 15px 15px 10px;
+}
+
+.topnav a:hover:not(.active) {
+    background-color: aquamarine;
+}
+
+.navlist {
+    background-color: #3FFF00;
+}
+
+/* Button CSS */
+.button-30 {
+    margin-left: 50%;
+    margin-bottom: 5%;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+
+
+/* Footer CSS */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.footer {
+    background: #000;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+body {
+    background-image: linear-gradient(180deg, #f2fcfe, #1c92d2);
+    background-repeat: no-repeat;
+
+}

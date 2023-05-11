@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="bookTicket.css" />
+    <title>
+        Ticket Booking
+    </title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <img src="Resources/logo.png" alt="logo" width="90" height="50"> <span class="logoname"><b>Sky
+                Scanner</b></span>
+        <button class="button-30" id="logOut" role="button"><b>Log out</b></button>
+        <a href="About_us.html">About Us</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="home.html">Home</a>
+    </div>
+    <div class="ticketform">
+        <h1>Book Ticket</h1>
+        <form onsubmit="return false">
+            <label for="travelDate">Travel Date:</label>
+            <input type="date" id="travelDate" name="travelDate" onkeydown="return false" required><br><br>
+
+            <label for="sourceCity">Source City:</label>
+            <select name="sourceCity" id="sourceCity" required>
+                <option value="" disabled selected>Please select an option</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Washington">Washington</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Dubai">Dubai</option>
+            </select>
+            <br><br>
+
+            <label for="destinationCity">Destination City: </label>
+            <select name="destinationCity" id="destinationCity" required>
+                <option value="" disabled selected>Please select an option</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Washington">Washington</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Dubai">Dubai</option>
+            </select>
+            <br>
+            <!-- Ticket Status -->
+            <p>Ticket Status:</p>
+            <input type="radio" id="open" name="ticketStatus" value="open" required>
+            <label for="open">Open</label>
+
+            <input type="radio" id="close" name="ticketStatus" value="close">
+            <label for="close">Close</label>
+
+            <input type="radio" id="confirmed" name="ticketStatus" value="confirmed">
+            <label for="confirmed">Confirmed</label>
+
+            <input type="radio" id="pending" name="ticketStatus" value="pending">
+            <label for="pending">Pending</label>
+
+            <!-- Seat Preference -->
+            <p>Seat Preference:</p>
+            <input type="radio" id="aisle" name="seatPreference" value="aisle" required>
+            <label for="aisle">Open</label>
+
+            <input type="radio" id="middle" name="seatPreference" value="middle">
+            <label for="middle">Middle</label>
+
+            <input type="radio" id="window" name="seatPreference" value="window">
+            <label for="window">Window</label>
+
+            <!-- Food Preference -->
+            <p>Food Preference:</p>
+            <input type="radio" id="veg" name="foodPreference" value="veg">
+            <label for="veg">Veg</label>
+
+            <input type="radio" id="nonVeg" name="foodPreference" value="non-veg">
+            <label for="nonVeg">Non-Veg</label>
+
+            <input type="radio" id="notAvailable" name="foodPreference" value="not available" checked>
+            <label for="notAvailable">Not Available</label>
+
+            <button class="button-30" id="book" role="button"><b>Book</b></button>
+        </form>
+    </div>
+    <br>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li><a href="Contact_us.html">Contact us</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="#">About the project</a></li>
+                    <li><a href="#">Devloper</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                Cheap flight booking from anywhere to everywhere<br>
+                © Skyscanner Ltd. 2002-2023
+            </div>
+        </div>
+    </footer>
+    <script src="bookTicket.js"></script>
+</body>
+
+</html>

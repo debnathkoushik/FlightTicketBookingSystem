@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update Ticket</title>
+    <link rel="stylesheet" type="text/css" href="updateTicket.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <img src="Resources/logo.png" alt="logo" width="90" height="50"> <span class="logoname">Sky Scanner</span>
+        <button class="button-30" id="logOut" role="button"><b>Log out</b></button>
+        <a href="About_us.html">About Us</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="home.html">Home</a>
+    </div>
+
+
+    <div class="ticketform">
+        <h1>Ticket Update</h1>
+        <form action="">
+            <label for="pnrNumber">PNR:</label>
+            <input type="text" id="pnrNumber" name="pnrNumber" readonly><br><br>
+
+            <label for="travelDate">Travel Date:</label>
+            <input type="date" id="travelDate" name="travelDate" onkeydown="return false" required><br><br>
+
+            <p>Seat Preference:</p>
+            <input type="radio" id="aisle" name="seatPreference" value="aisle">
+            <label for="aisle">Open</label>
+
+            <input type="radio" id="middle" name="seatPreference" value="middle">
+            <label for="middle">Middle</label>
+
+            <input type="radio" id="window" name="seatPreference" value="window">
+            <label for="window">Window</label>
+
+            <!-- Food Preference -->
+            <p>Food Preference:</p>
+            <input type="radio" id="veg" name="foodPreference" value="veg">
+            <label for="veg">Veg</label>
+
+            <input type="radio" id="nonveg" name="foodPreference" value="non-veg">
+            <label for="nonveg">Non-Veg</label>
+
+            <input type="radio" id="notAvailable" name="foodPreference" value="not available">
+            <label for="notAvailable">Not Available</label>
+        </form>
+    </div>
+    <br>
+    <button class="button-30" onclick="collectInputs()" role="button"><b>Confirm</b></button>
+
+
+    <!-- Slide Show -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount4.png" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li><a href="contactUs.html">Contact us</a></li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="#">About the project</a></li>
+                    <li><a href="#">Devloper</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                Cheap flight booking from anywhere to everywhere<br>
+                © Skyscanner Ltd. 2002-2023
+            </div>
+        </div>
+    </footer>
+
+    <script src="updateTicket.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Recent Ticket</title>
+    <link rel="stylesheet" type="text/css" href="viewRecentTicket.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <img src="Resources/logo.png" alt="logo" width="90" height="50"> <span class="logoname">Sky Scanner</span>
+        <button class="button-30" id="logOut" role="button"><b>Log out</b></button>
+        <a href="home.html">Home</a>
+    </div>
+
+
+
+
+    <table border="1" align="center">
+        <caption>VIEW</caption>
+
+        <tr>
+            <th>PNR NO</th>
+            <th>TRAVEL DATE</th>
+            <th>SOURCE</th>
+            <th>DESTINATION</th>
+            <th>SEAT PREFERENCE</th>
+            <th>TICKET STATUS</th>
+            <th>MEAL PREFERENCE</th>
+        </tr>
+
+        <tr>
+            <td id="pnrcell">1233456</td>
+            <td id="travelDateCell">02-01-2023</td>
+            <td id="sourceCityCell">Mumbai</td>
+            <td id="destinationCityCell">New York</td>
+            <td id="seatPreferenceCell">Window</td>
+            <td id="ticketStatusCell">Open</td>
+            <td id="foodPreferenceCell">Veg</td>
+
+        </tr>
+    </table>
+
+    <!-- Slide Show -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Resources/Discount4.png" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script src="viewRecentTicket.js"></script>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li><a href="Contact_us.html">Contact us</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="#">About the project</a></li>
+                    <li><a href="#">Devloper</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                Cheap flight booking from anywhere to everywhere<br>
+                © Skyscanner Ltd. 2002-2023
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
